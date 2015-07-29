@@ -68,19 +68,32 @@ h1, h2, h3, h4 {
   color: white;
   font-family: 'proxima_nova_altextrabold', Arial, sans-serif;
 }
+a{
+  color:#888888;
+}
 
+a:hover{
+  color:#444444;
+}
+strong{
+  font-family: 'proxima_nova_altextrabold', Arial, sans-serif;
+}
 p{
   font-family: 'proxima_nova_reg', Arial, sans-serif;
   color: black;
   font-size: 20px;
+  margin: 0 0 20px;
 }
 
 footer{
   text-align: center;
   font-style: italic;
-  padding: 20px;
+  padding: 50px;
 }
 
+footer p{
+  font-size: 15px;
+}
 figure{
   margin: 10px;
 }
@@ -92,6 +105,7 @@ figcaption{
 figcaption.top-img{
   background-color: white;
   margin-left: 10px;
+  text-align: center;
 }
 
 header{
@@ -102,7 +116,7 @@ header{
 }
 
 header:after {
-  padding-top: 51.25%;
+  padding-top: 56.25%;
   /* 16:9 ratio */
   display: block;
   content: '';
@@ -113,9 +127,14 @@ header:after {
 }
 .blockquote p{
   font-family: 'proxima_nova_regit', Arial, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  color: black;
 }
 
+.blockquote span{
+  color:#888888;
+  font-size: 20px;
+}
 #main-el{
     background-image: url("../img/photoA.jpg");
     background-position: center center;
@@ -142,14 +161,16 @@ header:after {
 
 .headline{
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
 }
-
+.mobile-headline{
+  padding: 0 5%;
+}
 .mobile-headline h1, .mobile-headline h3{
   color: black;
 }
@@ -157,16 +178,21 @@ header:after {
   background-color: white;
 }
 
+.soc-media{
+  max-width: 440px!important;
+}
+
 .section{
-  max-width:680px;
+  max-width: 680px;
+  padding-top: 5%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 5%;
 }
 
 .section.lrg{
   max-width: 1280px;
 }
+
 
 .section.media-sequence{
   max-width: 100%;
@@ -174,35 +200,38 @@ header:after {
 }
 
 .media-title{
-    position: absolute;
-    z-index: 4;
-    bottom: 150px;
-    right: 90px;
-    font-size: 150px;
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-     transition: opacity 1s ease-in;
-
+  position: absolute;
+  z-index: 4;
+  width: 32%;
+  bottom: 50px;
+  right: 40px;
+  font-size: 150px;
 }
+
+.media-title h1{
+  line-height: 56px;
+}
+
+.media-title-first{
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+   transition: opacity 2s ease-in;
+}
+
 .media-title-sec{
-    position: absolute;
-    z-index: 4;
-    bottom: 100px;
-    right: 90px;
-    font-size: 150px;
-    opacity: 0;
-    -webkit-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-     transition: opacity 1s ease-in;
-
+  opacity: 0;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+   transition: opacity 2s ease-in;
 }
 
-.media-title.load{
+
+.media-title-first.load{
   opacity: 1;
 }
 
@@ -223,7 +252,13 @@ p#article-byline{
   color: white;
 }
 
-
+.graphics{
+  text-align: center;
+}
+.graphics figure img{
+  width: 60%;
+  border: 4px black solid;
+}
 
 
 .media-container video, .media-container img{
@@ -236,7 +271,7 @@ p#article-byline{
 }
 
 #videoBg {
-  background-image: url("img/unlockedVid.jpg")
+  background-image: url("img/unlockedVid.jpg");
   background-size: cover;
   position: relative;
   min-width: 100%;
@@ -244,7 +279,7 @@ p#article-byline{
 }
 
 #videoBg:after {
-  padding-top: 51.25%;
+  padding-top: 53.25%;
   /* 16:9 ratio */
   display: block;
   content: '';
@@ -256,6 +291,16 @@ p#article-byline{
     padding-left: 5%;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .mob-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .graphics figure img{
+      width: 100%;
+  }
+  .soc-media{
+    padding: 0 20px;
   }
 }
 
